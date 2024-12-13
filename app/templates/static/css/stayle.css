@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@400;600&family=Share+Tech+Mono&family=Orbitron:wght@400;600&display=swap');
+
+:root {
+    --color-bg: #0a0b0e;
+    --color-primary: #00fff2;
+    --color-secondary: #ff00d4;
+    --color-surface: #1a1b23;
+    --color-text: #e0e0e0;
+    --glow-primary: 0 0 10px rgba(0, 255, 242, 0.3);
+    --glow-secondary: 0 0 15px rgba(255, 0, 212, 0.3);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Oxanium', sans-serif;
+    background: var(--color-bg);
+    color: var(--color-text);
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.card {
+    background: var(--color-surface);
+    border-radius: 12px;
+    padding: 2rem;
+    width: 100%;
+    max-width: 400px;
+    border: 1px solid rgba(0, 255, 242, 0.1);
+    box-shadow: 0 4px 20px rgba(255, 0, 212, 0.1);
+}
+
+h1 {
+    font-family: 'Orbitron', sans-serif;
+    color: var(--color-primary);
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 1rem;
+    background: rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(0, 255, 242, 0.2);
+    border-radius: 4px;
+    color: var(--color-text);
+    font-family: 'Share Tech Mono', monospace;
+    transition: all 0.3s ease;
+}
+
+input:focus {
+    outline: none;
+    border-color: var(--color-secondary);
+    box-shadow: var(--glow-secondary);
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 1rem 2rem;
+    background: transparent;
+    border: 2px solid var(--color-primary);
+    color: var(--color-text);
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background: var(--color-primary);
+    color: var(--color-bg);
+    box-shadow: var(--glow-primary);
+}
+
+.message {
+    background: rgba(0, 255, 242, 0.1);
+    border: 1px solid var(--color-primary);
+    color: var(--color-text);
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 4px;
+    font-family: 'Share Tech Mono', monospace;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .card {
+        margin: 1rem;
+        padding: 1.5rem;
+    }
+}
