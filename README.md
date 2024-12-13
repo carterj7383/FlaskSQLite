@@ -1,6 +1,6 @@
 # Flask Login Application
 
-A cyberpunk-styled Flask login system with SQLite database integration.
+Flask login system with SQLite database integration.
 
 ## Features
 
