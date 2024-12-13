@@ -12,8 +12,8 @@ def create_app():
     db.init_app(app)
     
     with app.app_context():
-        db.create_all()  # Add this line
-        # Add default admin user if it doesn't exist
+        db.create_all()  
+        
         from .models import User
         if not User.query.filter_by(email='admin@example.com').first():
             admin = User(email='admin@example.com', password='admin123')

@@ -8,7 +8,7 @@ class User(db.Model):
     def __repr__(self):
         return f'<User {self.email}>'
 
-# File: app/routes.py
+
 from flask import Blueprint, request, render_template
 from .models import User
 
